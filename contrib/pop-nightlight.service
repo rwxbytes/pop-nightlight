@@ -1,0 +1,14 @@
+[Unit]
+Description=Pop!_OS Night Light color temperature daemon
+Documentation=https://github.com/pop-os/cosmic
+PartOf=graphical-session.target
+After=graphical-session.target
+
+[Service]
+Type=simple
+ExecStart=%h/.cargo/bin/pop-nightlight daemon
+Restart=on-failure
+RestartSec=3
+
+[Install]
+WantedBy=graphical-session.target

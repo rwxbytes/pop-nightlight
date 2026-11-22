@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#252c3a"/>
+      <stop offset="100%" stop-color="#151820"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#f59e0b" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="orb" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fde68a"/>
+      <stop offset="55%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#ea580c"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#8be9f5"/>
+      <stop offset="100%" stop-color="#48b8c9"/>
+    </linearGradient>
+  </defs>
+  <rect x="8" y="8" width="112" height="112" rx="28" fill="url(#bg)" stroke="#3a4254" stroke-width="2"/>
+  <circle cx="64" cy="64" r="46" fill="url(#glow)"/>
+  <!-- Warm glowing crescent/sun orb -->
+  <path d="M71 31 A33 33 0 1 0 97 79 A25 25 0 1 1 71 31 Z" fill="url(#orb)"/>
+  <!-- COSMIC cyan twilight star accent -->
+  <path d="M88 34 L91 42 L99 45 L91 48 L88 56 L85 48 L77 45 L85 42 Z" fill="url(#accent)"/>
+  <circle cx="74" cy="31" r="2.6" fill="#63d0df" opacity="0.85"/>
+</svg>

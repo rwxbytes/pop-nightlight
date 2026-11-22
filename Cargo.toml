@@ -1,0 +1,29 @@
+[package]
+name = "pop-nightlight"
+version = "0.1.0"
+edition = "2024"
+description = "Lightweight pure-Rust Night Light daemon, CLI, StatusNotifierItem tray, and COSMIC-styled slider popover"
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/rwxbytes/pop-nightlight"
+keywords = ["nightlight", "wayland", "cosmic", "pop-os", "gamma"]
+categories = ["command-line-utilities", "gui"]
+
+[dependencies]
+anyhow = "1"
+chrono = { version = "0.4", features = ["clock"] }
+clap = { version = "4", features = ["derive"] }
+fontdue = "0.9"
+ksni = "0.3"
+rustix = { version = "1", features = ["fs"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tokio = { version = "1", features = ["macros", "net", "rt-multi-thread", "signal", "sync", "time"] }
+toml = "0.8"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+wayland-client = "0.31"
+wayland-protocols = { version = "0.32", features = ["client"] }
+wayland-protocols-wlr = { version = "0.3", features = ["client"] }
+x11rb = { version = "0.13", features = ["randr"] }
+zbus = "5"

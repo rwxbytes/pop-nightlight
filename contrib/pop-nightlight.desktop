@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=Pop Night Light
+GenericName=Screen Color Temperature
+Comment=Adjust screen color temperature, warmth intensity, and solar schedule
+Keywords=night;light;redshift;gamma;kelvin;warm;blue;filter;eye;sunset;display;cosmic;
+Exec=pop-nightlight launch
+Icon=pop-nightlight
+Terminal=false
+Categories=Utility;Settings;DesktopSettings;
+StartupNotify=false
